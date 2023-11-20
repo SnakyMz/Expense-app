@@ -125,7 +125,7 @@ You can deploy this project using GitPages:
 
 - GitHub: [@SnakyMz](https://github.com/SnakyMz)
 - Twitter: [@SobanSyeed](https://twitter.com/SobanSyeed)
-- LinkedIn: [Soban Syeed](https://www.linkedin.com/in/soban-syeed-82985b241/)
+- LinkedIn: [Soban Syeed](https://www.linkedin.com/in/soban-syeed/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
