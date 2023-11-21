@@ -1,9 +1,4 @@
 class EntityController < ApplicationController
-  def index
-    @user = User.find(params[:user_id])
-    @entities = @user.entities.order(created_at: :desc)
-  end
-
   def new
     @entity = Entity.new
   end

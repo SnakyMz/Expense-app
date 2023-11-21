@@ -7,6 +7,7 @@ class GroupController < ApplicationController
   def show
     @user = User.find(params[:user_id])
     @group = @user.groups.find(params[:id])
+    @entities = @group.entities.order(created_at: :desc)
   end
 
   def new
