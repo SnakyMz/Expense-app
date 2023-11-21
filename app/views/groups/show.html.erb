@@ -4,15 +4,21 @@
     <h1>Transactions</h1>
     <%= button_to '[>]', destroy_user_session_path, :class=>'logout', method: :delete %>
   </nav>
-  <div>
-    <h2>
-      Total Amount: $ 
-      <% sum = 0 %>
-      <% @entities.each do |entity| %>
-      <% sum += entity.amount %>
-      <% end %>
-      <%= sum %>
-    </h2>
+  <div class='categoryDetails'>
+    <div>
+      <img src=<%= @group.icon %> alt=<%= @group.name %> class='icons'>
+    </div>
+    <div class='categoryInfo'>
+      <h2><%= @group.name %></h2>
+      <p>
+        Total Amount: $ 
+        <% sum = 0 %>
+        <% @entities.each do |entity| %>
+        <% sum += entity.amount %>
+        <% end %>
+        <%= sum %>
+      </p>
+    </div>   
   </div>
   <% @entities.each do |entity| %>
     <div class='transaction'>

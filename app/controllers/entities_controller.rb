@@ -11,7 +11,7 @@ class EntitiesController < ApplicationController
     @entity.author = current_user
     if @entity.save
       flash[:success] = 'Transaction created!'
-      redirect_to group_entities_path(@entity.group)
+      redirect_to group_path(@entity.group)
     else
       flash[:error] = 'Something went wrong!'
       render :new
@@ -21,6 +21,6 @@ class EntitiesController < ApplicationController
   private
 
   def entity_params
-    params.require(:entity).permit(:name, :amount, :group_id)
+    params.require(:entity).permit(:name, :amount)
   end
 end
