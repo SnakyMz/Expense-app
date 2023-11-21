@@ -1,12 +1,10 @@
-class GroupController < ApplicationController
+class GroupsController < ApplicationController
   def index
-    @user = User.find(params[:user_id])
-    @groups = @user.groups
+    @groups = Group.all
   end
 
   def show
-    @user = User.find(params[:user_id])
-    @group = @user.groups.find(params[:id])
+    @group = Group.find(params[:id])
     @entities = @group.entities.order(created_at: :desc)
   end
 
