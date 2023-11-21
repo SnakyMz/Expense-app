@@ -1,0 +1,14 @@
+<section class='addCategory'>
+  <nav>
+    <%= link_to '<', groups_path, :class=>'nav-btn' %>
+    <h1>Add a New Category</h1>
+    <%= button_to '[>]', destroy_user_session_path, :class=>'logout', method: :delete %>
+  </nav>  
+  <%= form_with model: @group, url: groups_path, method: :post do |form| %>
+    <%= form.label :name, 'Name:' %>
+    <%= form.text_field :name, :class => 'texts' %>
+    <%= form.label :icon, 'Icon:' %>
+    <%= form.text_field :icon, :class => 'texts' %>
+    <%= form.submit 'Create Category', :class => 'btn' %>
+  <% end %>
+</section>
