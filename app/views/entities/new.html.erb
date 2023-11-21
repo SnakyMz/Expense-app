@@ -9,6 +9,8 @@
     <%= form.text_field :name, :class => 'texts' %>
     <%= form.label :amount, 'Amount:' %>
     <%= form.text_field :amount, :class => 'texts' %>
+    <%= form.label :group_id, 'Category:' %>
+    <%= form.collection_select :group_id, Group.all, :id, :name %>
     <%= form.submit 'Create Transaction', :class => 'btn' %>
   <% end %>
 </section>

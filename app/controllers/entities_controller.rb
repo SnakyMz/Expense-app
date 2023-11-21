@@ -5,9 +5,7 @@ class EntitiesController < ApplicationController
   end
 
   def create
-    @group = Group.find(params[:group_id])
     @entity = Entity.create(entity_params)
-    @entity.group = @group
     @entity.author = current_user
     if @entity.save
       flash[:success] = 'Transaction created!'
@@ -21,6 +19,6 @@ class EntitiesController < ApplicationController
   private
 
   def entity_params
-    params.require(:entity).permit(:name, :amount)
+    params.require(:entity).permit(:name, :amount, :group_id)
   end
 end
