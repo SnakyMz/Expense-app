@@ -1,7 +1,7 @@
 <section class='transactions'>
   <nav>
     <ul>
-      <li><%= link_to '<', groups_path, :class=>'navBtn' %></li>
+      <li><%= link_to '<', user_groups_path(@user), :class=>'navBtn' %></li>
       <li><p>TRANSACTIONS</p></li>
       <li><%= button_to '[>]', destroy_user_session_path, :class=>'logout', method: :delete %></li>
     </ul>
@@ -33,6 +33,6 @@
     <% end %>
   </section>
   <div class='bottom'>
-    <%= link_to 'Add Transaction', new_group_entity_path(@group), :class=>'linkBtn' %>
+    <%= link_to 'Add Transaction', new_user_group_entity_path(@user, @group), :class=>'linkBtn' %>
   </div>
 </section>
