@@ -1,15 +1,18 @@
 class GroupsController < ApplicationController
   def index
-    @groups = Group.all
+    @user = current_user
+    @groups = @user.groups
   end
 
   def show
+    @user = current_user
     @group = Group.find(params[:id])
     @entities = @group.entities.order(created_at: :desc)
   end
 
   def new
     @group = Group.new
+    @user = current_user
   end
 
   def create
@@ -17,7 +20,7 @@ class GroupsController < ApplicationController
     @group.author = current_user
     if @group.save
       flash[:success] = 'Category created!'
-      redirect_to groups_path
+      redirect_to user_groups_path(@group.author)
     else
       flash[:error] = 'Something went wrong!'
       render :new

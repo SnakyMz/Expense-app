@@ -9,8 +9,10 @@ Rails.application.routes.draw do
     root "groups#index", as: :authenticated_root
   end
 
-  resources :groups, only: [:index, :show, :new, :create] do
-    resources :entities, only: [:new, :create]
+  resources :users, only: [:show] do
+    resources :groups, only: [:index, :show, :new, :create] do
+      resources :entities, only: [:new, :create]
+    end
   end
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

@@ -43,6 +43,7 @@ html {
 .registration,
 .session,
 .forgotPassword,
+.userDetails,
 .addCategory,
 .addTransaction {
   font-size: 1.2rem;

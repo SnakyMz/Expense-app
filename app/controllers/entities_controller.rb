@@ -2,6 +2,7 @@ class EntitiesController < ApplicationController
   def new
     @entity = Entity.new
     @group = Group.find(params[:group_id])
+    @user = @group.author
   end
 
   def create
@@ -9,7 +10,7 @@ class EntitiesController < ApplicationController
     @entity.author = current_user
     if @entity.save
       flash[:success] = 'Transaction created!'
-      redirect_to group_path(@entity.group)
+      redirect_to user_group_path(@entity.author, @entity.group)
     else
       flash[:error] = 'Something went wrong!'
       render :new
