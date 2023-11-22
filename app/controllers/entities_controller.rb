@@ -1,21 +1,15 @@
-class EntityController < ApplicationController
-  def index
-    @user = User.find(params[:user_id])
-    @entities = @user.entities.order(created_at: :desc)
-  end
-
+class EntitiesController < ApplicationController
   def new
     @entity = Entity.new
+    @group = Group.find(params[:group_id])
   end
 
   def create
-    @group = Group.find(params[:group_id])
     @entity = Entity.create(entity_params)
-    @entity.group = @group
     @entity.author = current_user
     if @entity.save
       flash[:success] = 'Transaction created!'
-      redirect_to group_entities_path(@entity.group)
+      redirect_to group_path(@entity.group)
     else
       flash[:error] = 'Something went wrong!'
       render :new
