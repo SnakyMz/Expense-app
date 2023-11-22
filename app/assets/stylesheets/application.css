@@ -35,7 +35,8 @@ html {
 }
 
 .registration,
-.session {
+.session,
+.addCategory {
   font-size: 1.2rem;
   min-height: 100vh;
   background-color: #3778c2;
@@ -46,7 +47,7 @@ html {
   align-items: center;
 }
 
-form {
+.forms {
   width: 70%;
 }
 
@@ -65,8 +66,8 @@ form {
   font-size: 1rem;
   background-color: #5fb523;
   color: white;
-  padding: 0.2rem 0.4rem;
-  margin: 0.5rem 0;
+  padding: 0.3rem 0.6rem;
+  margin: 0.8rem 0;
   border: solid 0.1rem white;
 }
 
@@ -81,6 +82,7 @@ form {
 }
 
 nav ul {
+  color: white;
   background-color: #3778c2;
   list-style: none;
   width: 100%;
