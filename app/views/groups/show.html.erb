@@ -26,7 +26,7 @@
     </div>
     <% @entities.each do |entity| %>
       <div class='transaction'>
-        <h3>Name: <%= entity.name %></h3>
+        <h3><%= entity.name %></h3>
         <p>Amount: <%= entity.amount %></p>
         <p><%= entity.created_at %></p>
       </div>
