@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     root "groups#index", as: :authenticated_root
   end
 
-  resources :users do
+  resources :users, only: [:show] do
     resources :groups, only: [:index, :show, :new, :create] do
       resources :entities, only: [:new, :create]
     end
