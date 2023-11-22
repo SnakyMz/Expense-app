@@ -34,7 +34,8 @@ html {
   color: white;
 }
 
-.registration {
+.registration,
+.session {
   font-size: 1.2rem;
   min-height: 100vh;
   background-color: #3778c2;
@@ -43,6 +44,10 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+form {
+  width: 70%;
 }
 
 .btnDiv {
