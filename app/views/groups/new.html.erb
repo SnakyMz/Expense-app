@@ -1,11 +1,12 @@
 <nav>
   <ul>
     <li><%= link_to '<', groups_path, :class=>'navBtn' %></li>
-    <li><h2>Add a New Category</h2></li>
+    <li><p>CATEGORY</p></li>
     <li><%= button_to '[>]', destroy_user_session_path, :class=>'logout', method: :delete %></li>
   </ul>
 </nav>
-<section class='addCategory'>  
+<section class='addCategory'>
+  <h2>Add a New Category</h2>
   <%= form_with model: @group, url: groups_path, :class=>'forms', method: :post do |form| %>
     <%= form.label :name, 'Name:' %>
     <%= form.text_field :name, :class => 'texts' %>
