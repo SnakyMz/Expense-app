@@ -62,6 +62,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Link to Live demo](https://expense-app-i6s3.onrender.com/)
+- [Quick Overview](https://www.loom.com/share/9561499c020245e499a04d58c04d474f?sid=ace19de7-f3c6-4227-87c8-124d613944e6)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
