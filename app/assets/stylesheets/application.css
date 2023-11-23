@@ -33,11 +33,23 @@ html {
   padding: 0.3rem 0.6rem;
   border: solid 0.1rem white;
   color: white;
+  transition: background-color 1s ease-out;
+}
+
+.signIn:hover {
+  background-color: white;
+  color: #5fb523;
+  border: solid 0.1rem #5fb523;
 }
 
 .signUp {
   font-size: 1.5rem;
   color: white;
+  text-decoration: none;
+}
+
+.signUp:hover {
+  text-decoration: underline;
 }
 
 .registration,
@@ -56,7 +68,8 @@ html {
   align-items: center;
 }
 
-.forms {
+.forms,
+.new_user {
   width: 70%;
 }
 
@@ -67,21 +80,36 @@ html {
 }
 
 .texts {
+  margin: 0.4rem 0 0.6rem 0;
+  padding: 0.4rem 0.6rem;
   width: 100%;
 }
 
 .btn {
   cursor: pointer;
   font-size: 1rem;
+  width: 100%;
   background-color: #5fb523;
   color: white;
-  padding: 0.3rem 0.6rem;
+  padding: 0.3rem 0;
   margin: 0.8rem 0;
   border: solid 0.1rem white;
+  transition: background-color 1s ease-out;
+}
+
+.btn:hover {
+  background-color: white;
+  border: solid 0.1rem #5fb523;
+  color: #5fb523;
 }
 
 .links {
   color: white;
+  text-decoration: none;
+}
+
+.links:hover {
+  text-decoration: underline;
 }
 
 .categories,
@@ -139,6 +167,12 @@ nav ul {
   padding: 1% 2%;
   margin-bottom: 4%;
   box-shadow: 0 0 0.3rem lightgrey;
+  transition: background-color 1s ease-out;
+}
+
+.category:hover {
+  background-color: #5fb523;
+  color: white;
 }
 
 .icons {
@@ -171,6 +205,12 @@ nav ul {
   padding: 0.6rem;
   color: white;
   width: 100%;
+  transition: background-color 1s ease-out;
+}
+
+.linkBtn:hover {
+  background-color: white;
+  color: #5fb523;
 }
 
 .categoryDetails {
@@ -183,4 +223,68 @@ nav ul {
   box-shadow: 0 0 0.3rem lightgrey;
   margin-bottom: 0.5rem;
   padding: 1% 2%;
+  transition: background-color 1s ease-out;
+}
+
+.transaction:hover {
+  background-color: #3778c2;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {  
+  .welcome {
+    font-size: 3rem;
+  }
+
+  .signUp {
+    font-size: 2rem;
+  }
+
+  .signIn,
+  .registration,
+  .session,
+  .forgotPassword,
+  .userDetails,
+  .addCategory,
+  .addTransaction {
+    font-size: 1.7rem;
+  }
+
+  .forms,
+  .new_user {
+    width: 50%;
+  }
+
+  .msg,
+  .texts {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
+  }
+
+  .categories,
+  .transactions {
+    font-size: 1.4rem;
+  }
+
+  nav ul,
+  .navBtn,
+  .logout {
+    font-size: 1.7rem;
+  }
+
+  .icons {
+    max-width: 8rem;
+  }
+
+  .bottom {
+    padding: 2%;
+  }
+
+  #entity_group_id {
+    font-size: 1.4rem;
+  }
 }
