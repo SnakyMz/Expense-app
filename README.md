@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -58,6 +59,12 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Link to Live demo](https://expense-app-i6s3.onrender.com/)
+- [Quick Overview](https://www.loom.com/share/b6bc3659c096497d8033110ade38c3f6?sid=544571df-58df-4030-a0f0-b49960266c29)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -125,7 +132,7 @@ You can deploy this project using GitPages:
 
 - GitHub: [@SnakyMz](https://github.com/SnakyMz)
 - Twitter: [@SobanSyeed](https://twitter.com/SobanSyeed)
-- LinkedIn: [Soban Syeed](https://www.linkedin.com/in/soban-syeed-82985b241/)
+- LinkedIn: [Soban Syeed](https://www.linkedin.com/in/soban-syeed/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,7 +159,7 @@ If you like this project and wish to collaborate. Please contact me.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Thank you Microverse.
+- Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
